@@ -1,0 +1,38 @@
+body{
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+
+#clr-btn{
+    width: 100vw;
+    display: block;
+
+}
+
+
+#clr-btn-1{
+    width: 15em;
+    height:5em;
+    border:2px transparent solid;
+    border-radius: 13px;
+}
+
+#disp-text{
+    width:100vw;
+    display: block;
+    padding: 10px;
+}
