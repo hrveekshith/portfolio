@@ -9,7 +9,11 @@ function addRecommendation() {
     // Create a new 'recommendation' element and set it's value to the user's message
     var element = document.createElement("div");
     element.setAttribute("class","recommendation");
-    element.innerHTML = "\<span\>&#8220;\</span\>" + recommendation.value + "\<span\>&#8221;\</span\>";
+    var span = document.createElement("span");
+    span.innerText = recommendation.value;
+    element.appendChild(span);
+
+
     // Add this element to the end of the list of recommendations
     document.getElementById("all_recommendations").appendChild(element); 
     
@@ -23,5 +27,14 @@ function showPopup(bool) {
     document.getElementById('popup').style.visibility = 'visible'
   } else {
     document.getElementById('popup').style.visibility = 'hidden'
+  }
+}
+
+function showWelcome(bool){
+  if(bool) {
+    document.getElementById('welcome').style.visibility = 'visible'
+  } else {
+    document.getElementById('welcome').style.visibility = 'hidden'
+    document.querySelector(".overlay").style.visibility = 'hidden'
   }
 }

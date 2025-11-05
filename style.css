@@ -213,6 +213,7 @@ h2 {
 }
 
 .recommendation {
+
   font-style: italic;
   text-align: left;
   width: 21.875rem;
@@ -220,7 +221,7 @@ h2 {
   background-color: #fff;
   border-radius: 11px;
   box-shadow: 0 3px 10px var(--primary-shadow);
-  padding: 20px;
+  padding: 30px;
   margin: 10px;
   border:1px solid gray;
   font-size: 18px;
@@ -261,7 +262,7 @@ h2 {
   text-align: center;
   position: fixed;
   /* padding: 30px; */
-  visibility: visible;
+  visibility: hidden;
 }
 
 .popup img {
@@ -346,3 +347,52 @@ button:hover {
 #all_recommendations:empty{
   visibility:hidden;
 }
+
+.seperator{
+  background-color: black;
+  height:0.1em;
+  margin-left: 3.4em;
+  width: 88%;
+
+}
+
+.welcome{
+  border: 1px solid black;
+  border-radius: 12px;
+  width: 320px;
+  max-width: 90vw;
+  height: auto;
+  padding: 3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e8bcf0;
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  visibility: visible;
+}
+
+.welcome button{
+  background-color: #fff;
+  color: #7600bc;
+  border:1px solid #7600bc;
+}
+
+.welcome button:hover{
+  background-color: #fff;
+  color: #7600bc;
+  font-weight: bolder;
+  border:2px solid #7600bc;
+}
+
+.overlay{
+  position: fixed;
+  top:0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255,255,255,.9);
+}
+
